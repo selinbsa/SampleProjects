@@ -38,16 +38,16 @@ public class Main {
 
             //Apply age discount
             double age_discount = price * discount_ratio;
-            double discount_price = price - age_discount;
+            double total_price = price - age_discount;
 
             //Checking type of travel
             if (travel_type == 2){
-                discount_price *= 0.80; //%20 discount
-                discount_price *= 2; // round trip times two price
+                total_price *= 0.80; //%20 discount
+                total_price *= 2; // round trip times two price
 
             }
 
-            System.out.println("Toplam tutar = " + discount_price + " Tl");
+            System.out.println("Toplam tutar = " + total_price + " Tl");
 
         }
 
